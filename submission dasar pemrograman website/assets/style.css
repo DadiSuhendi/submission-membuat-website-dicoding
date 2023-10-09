@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e4dccf;
+}
+
+.scroll-nav {
+  background-color: #576f72;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+  /* transition: 0.1s ease-in-out; */
+}
+
+header {
+  background-color: #576f72;
+  margin: 40px 62px 0 62px;
+  border-radius: 10px;
+  transition: 1s ease-in-out;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e4dccf;
+  font-size: 18px;
+}
+
+nav .left li {
+  margin-left: 20px;
+}
+
+nav .right {
+  padding-right: 70px;
+}
+
+nav .right li {
+  margin-left: 20px;
+}
+
+main {
+  margin: 0 145px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main article {
+  color: #576f72;
+  width: 530px;
+}
+
+main article h1 {
+  font-size: 48px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+main article p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+article .learnMore {
+  width: 120px;
+  height: 35px;
+  background-color: #7d9d9c;
+  border-radius: 50px;
+}
+
+article .learnMore a {
+  color: #e4dccf;
+  height: 35px;
+  display: block;
+  text-align: center;
+  padding-top: 9px;
+  text-decoration: none;
+}
+
+.logoLaptop {
+  font-size: 12em;
+  color: #576f72;
+}
+
+.title {
+  color: #576f72;
+}
+
+.skills,
+.biodata {
+  padding: 0 145px;
+}
+
+.skills h1 {
+  margin-top: 6em;
+}
+
+.skills .card {
+  width: 200px;
+  height: 200px;
+  background: #e4dccf;
+  /* box-shadow: 0 7px 15px 1px rgba(0, 0, 0, 0.25); */
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 1px solid #576f72;
+  transition: 0.5s ease-in-out;
+}
+
+.skills .card:hover {
+  box-shadow: 0 7px 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+.card .fa-html5 {
+  color: #e46028;
+  font-size: 130px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .fa-square-js {
+  color: #ead41c;
+  font-size: 130px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .fa-php {
+  color: #4b568c;
+  font-size: 130px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.biodata h1 {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.biodata .biodataCard {
+  width: 650px;
+  height: auto;
+  background-color: #576f72;
+  border-radius: 25px;
+  margin: auto;
+  padding: 100px 0;
+  margin-bottom: 80px;
+}
+
+.biodataCard .border {
+  border-radius: 150px;
+  width: 200px;
+  height: 200px;
+  border: none;
+  background: url(image/Dadi.jpeg);
+  background-size: cover;
+  margin: auto;
+}
+
+.biodataCard table {
+  color: #e4dccf;
+  display: flex;
+  justify-content: center;
+  width: 110%;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background: #576f72;
+  color: #e4dccf;
+}
+
+footer p {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowUp {
+  text-decoration: none;
+  color: #576f72;
+  position: sticky;
+  z-index: 999;
+  left: 1200px;
+  bottom: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.arrowUp .fa-circle-arrow-up {
+  font-size: 2.5em;
+}
+
+@media screen and (max-width: 513px) {
+  header {
+    margin: 20px;
+  }
+
+  main {
+    margin: 0 50px;
+  }
+
+  main article h1 {
+    font-size: 24px;
+  }
+
+  main article p {
+    font-size: 12px;
+  }
+
+  .logoLaptop {
+    display: none;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .skills,
+  .biodata {
+    padding: 0 50px;
+  }
+
+  .skills .card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card .fa-html5 {
+    font-size: 65px;
+  }
+
+  .card .fa-square-js {
+    font-size: 65px;
+  }
+
+  .card .fa-php {
+    font-size: 65px;
+  }
+
+  .biodata .biodataCard {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .biodataCard .border {
+    width: 92px;
+    height: 92px;
+  }
+
+  .biodataCard table {
+    font-size: 12px;
+  }
+
+  .arrowUp {
+    text-decoration: none;
+    color: #576f72;
+    position: sticky;
+    z-index: 999;
+    left: 440px;
+    bottom: 20px;
+  }
+
+  .arrowUp .fa-circle-arrow-up {
+    font-size: 2em;
+  }
+
+  .learnMore {
+    display: none;
+  }
+
+  .skills h1 {
+    margin-top: 3em;
+  }
+
+  .flex {
+    margin-top: 1.5em;
+  }
+}
